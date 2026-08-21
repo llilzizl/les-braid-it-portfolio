@@ -74,7 +74,7 @@ img {
 
 .logo {
   display: block;
-  height: 48px;
+  height: 84px;
   width: auto;
 }
 
@@ -98,8 +98,8 @@ img {
 }
 
 .main-nav a img {
-  width: 16px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
   opacity: 0.85;
   transition: opacity 0.2s ease;
 }
@@ -194,25 +194,33 @@ img {
 }
 
 .hero-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   max-width: 900px;
   margin: 56px auto 0;
   position: relative;
   z-index: 1;
 }
 
-.hero-gallery img {
-  width: 100%;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-  border-radius: 16px;
-  border: 1px solid var(--pink);
+.hero-gallery figure {
+  flex: 0 1 280px;
+  margin: 0 -22px;
 }
 
-.hero-gallery figure:nth-child(2) img {
-  transform: translateY(-18px);
+.hero-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  border-radius: 0;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.55));
+}
+
+.hero-gallery figure:nth-child(2) {
+  z-index: 1;
+  transform: translateY(-14px);
+  flex-basis: 300px;
 }
 
 /* ---------- specialties (home) ---------- */
@@ -534,8 +542,8 @@ body.lightbox-active .portfolio-rail .portfolio-item {
 }
 
 .contact-icons a {
-  width: 40px;
-  height: 40px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   border: 1px solid var(--pink);
   display: flex;
@@ -548,8 +556,8 @@ body.lightbox-active .portfolio-rail .portfolio-item {
   transform: translateY(-3px);
 }
 .contact-icons img {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
 }
 
@@ -763,9 +771,12 @@ section.form-section h2 {
   .main-nav ul {
     gap: 18px;
   }
-  .hero-gallery {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+  .hero-gallery figure {
+    flex-basis: 34vw;
+    margin: 0 -14px;
+  }
+  .hero-gallery figure:nth-child(2) {
+    flex-basis: 38vw;
   }
   .about-strip {
     flex-wrap: wrap;
