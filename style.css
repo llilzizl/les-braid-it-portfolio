@@ -54,7 +54,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 6%;
+  padding: 4px 6%;
   background: rgba(13, 13, 13, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border);
@@ -62,7 +62,7 @@ img {
 
 .logo {
   display: block;
-  height: 84px;
+  height: 110px;
   width: auto;
 }
 
