@@ -46,18 +46,6 @@ img {
   max-width: 100%;
   display: block;
 }
-
-/* ---------- decorative background art ---------- */
-.decor {
-  position: absolute;
-  pointer-events: none;
-  opacity: 0.16;
-  z-index: 0;
-  user-select: none;
-}
-.decor-tr { top: -40px; right: -60px; width: 320px; }
-.decor-bl { bottom: -40px; left: -60px; width: 300px; transform: rotate(180deg); }
-
 /* ---------- header / nav ---------- */
 .site-header {
   position: sticky;
