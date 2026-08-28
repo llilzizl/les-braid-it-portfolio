@@ -349,8 +349,10 @@ img {
   inset: 0;
   z-index: 1000;
   display: none;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  overflow-y: auto;          
+  padding: 40px 0;
   background: rgba(13, 13, 13, 0.7);
 }
 
