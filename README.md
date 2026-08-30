@@ -56,27 +56,26 @@ Google Fonts: Playfair Display (headings) and Montserrat (body text)
 Git & GitHub for version control
 GitHub Pages for deployment
 
-File structure :
-les-braid-it/
+## File structure
+
+```
+les-braid-it-portfolio/
 ├── index.html
 ├── portfolio.html
 ├── contact.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   └── images/
-│       ├── logo.png
-│       ├── hero-1.jpg, hero-2.jpg, hero-3.jpg
-│       ├── about-photo.jpg
-│       ├── bg-decor-1.png, bg-decor-2.png, bg-decor-contact.png
-│       ├── icons/
-│       │   ├── nav-home.png, nav-portfolio.png, nav-contact.png
-│       │   └── social-instagram.png, social-pinterest.png, social-tiktok.png, social-email.png
-│       └── portfolio/
-│           └── (photos grouped by style, e.g. fulani-1.jpg, cassie-1.jpg, natural-1.jpg, etc.)
-└── README.md
+├── style.css
+├── main.js
+├── README.md
+└── images/
+    ├── logo.png
+    ├── about-photo.jpg
+    ├── hero-1.jpg, hero-2.jpg, hero-3.jpg
+    ├── icons/
+    │   ├── nav-home.png, nav-portfolio.png, nav-contact.png
+    │   └── social-instagram.png, social-pinterest.png, social-tiktok.png, social-email.png
+    └── portfolio/
+        └── (photos grouped by style, e.g. fulani-1.jpg, cassie-1.jpg, natural-1.jpg, etc.)
+```
 
 Files and folders use lowercase names with no spaces, for cross-platform compatibility.
 
