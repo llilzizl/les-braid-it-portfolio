@@ -9,7 +9,7 @@ Purpose
 Les Braid It needed a simple, professional web presence that does two things well:
 
 Shows off real examples of finished work, organised by style, so a new visitor can judge quality and find the look they want at a glance
-Makes it effortless to get in touch or book, either for a "Perfect" Sew In class or a collaboration/shoot, so interest converts into an actual enquiry
+It is easy get in touch or book, either for a "Perfect" Sew In class or a collaboration/shoot, so interest converts into an actual enquiry
 
 The goal was a site whose purpose is obvious within seconds of landing on it.
 
@@ -25,10 +25,12 @@ As a potential client, I want an easy way to register interest or get in touch, 
 As a brand or content creator, I want a separate, relevant way to enquire about collaborations, so my enquiry isn't mixed in with class sign-ups.
 As any visitor, I want to find the stylist's social profiles quickly, so I can see more of her work before committing.
 
-Pages	Purpose
-Home (index.html)	Introduces the stylist and brand, hero gallery of recent work, links through to the portfolio and to the two contact pathways
-Portfolio (portfolio.html)	Gallery of real work across 8 styles (Perfect Sew In, Fulani, Cassie, Natural, Patewo and Base, Boho French Curl, Extra Small Layered, Pick and Drop). Tapping a photo opens a close-up view with navigation and, for the Perfect Sew In style, extra detail about the method
-Contact (contact.html)	About section with photo and social links, plus two enquiry pathways: Perfect Sew In Classes and Collaborations/Shoots, each revealed only once its button is selected
+Pages & Purpose
+Home (index.html) - Introduces the brand, hero gallery of recent work, links through to the portfolio and to the two contact pathways
+
+Portfolio (portfolio.html) - Gallery of real work across 8 styles (Perfect Sew In, Fulani, Cassie, Natural, Patewo and Base, Boho French Curl, Extra Small Layered, Pick and Drop). Tapping a photo opens a close-up view with navigation and, for the Perfect Sew In style, extra detail about the method
+
+Contact (contact.html) - About section with photo and social links, plus two enquiry pathways: Perfect Sew In Classes and Collaborations/Shoots, each revealed only once its button is selected
 
 Navigation is identical across all three pages so the site feels cohesive rather than three separate documents.
 
@@ -43,11 +45,35 @@ Colour palette (matches the existing Les Braid It brand):
 #B3B3B3: grey, used for supporting/body text
 #FFFCF9: off-white, used for primary text on the dark background
 
-The palette was chosen to give strong contrast between text and background for readability; a full accessibility contrast audit is still to be carried out (see Testing).
+Colour Contrast Audit
+
+| Foreground | Background | Used for | Ratio | AA Normal Text (4.5:1) | AA Large Text (3:1) |
+|---|---|---|---|---|---|
+| #FFFCF9 | #0D0D0D | Primary body text | 19.01:1 | Pass | Pass |
+| #B3B3B3 | #0D0D0D | Supporting text | 9.27:1 | Pass | Pass |
+| #E8558F | #0D0D0D | Headings, links, outline buttons | 5.67:1 | Pass | Pass |
+| #FBE4EF | #0D0D0D | Form labels | 16.15:1 | Pass | Pass |
+| #0D0D0D | #E8558F | Text on solid pink buttons | 5.67:1 | Pass | Pass |
+| #FFFCF9 | #171717 | Body text inside cards | 17.54:1 | Pass | Pass |
+| #B3B3B3 | #171717 | Supporting text inside cards | 8.55:1 | Pass | Pass |
+
+<img width="926" height="842" alt="image" src="https://github.com/user-attachments/assets/cbb688f7-5974-4f1f-a484-1ac16475590c" />
+<img width="927" height="842" alt="image" src="https://github.com/user-attachments/assets/cb487040-95ae-4c78-9e3f-5f65d7e1acdd" />
+<img width="932" height="938" alt="image" src="https://github.com/user-attachments/assets/bc7a4ae3-a8b3-4bb6-954d-85eaac8e6240" />
+<img width="937" height="837" alt="image" src="https://github.com/user-attachments/assets/52bf7fb5-e15c-444a-a656-01eee6b9124d" />
+<img width="918" height="900" alt="image" src="https://github.com/user-attachments/assets/4b751142-11a7-4f1e-88d6-89b4cfd34633" />
+<img width="917" height="850" alt="image" src="https://github.com/user-attachments/assets/3ef458a3-f27a-45e6-a890-c0ac4c00ea61" />
+<img width="925" height="852" alt="image" src="https://github.com/user-attachments/assets/8f47bce9-412a-48c7-af90-688762e72384" />
+
+
+
+The palette was chosen to give strong contrast between text and background for readability; a full accessibility contrast audit is still to be carried out.
+
+I used : webaim.org/resources/contrastchecker
 
 Progressive disclosure: the two contact forms are hidden until a visitor picks the one relevant to them, so nobody has to scroll past a form they don't need. A small "i" icon next to each option explains what it's for before committing to it.
 User control: no autoplay media or pop-ups; clicking a portfolio photo, switching contact tabs, and opening an info panel all give immediate visual feedback.
-Accessibility: all meaningful images include descriptive alt text; purely decorative images (background flourishes) are marked with empty alt attributes so screen readers skip them; the gallery lightbox supports keyboard (Esc, arrow keys) and touch-swipe navigation, not just mouse clicks.
+Accessibility: all meaningful images include descriptive alt text; ; the gallery lightbox supports keyboard (Esc, arrow keys) and touch-swipe navigation, not just mouse clicks.
 Technologies used
 HTML5 (semantic markup: <header>, <nav>, <main>, <section>, <footer>)
 CSS3 (external stylesheet, custom properties for the colour palette, Flexbox and Grid layout, scroll-snap for the swipeable gallery, media queries for responsive layout)
@@ -103,7 +129,7 @@ Still to do before this is submission-ready:
 
 Known bugs
 
-[List anything not yet fixed, and why, e.g. "contact forms don't currently submit anywhere; no backend is connected yet, so this is expected at this stage, not a bug."]
+None    
 
 Deployment
 
