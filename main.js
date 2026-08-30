@@ -113,13 +113,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var infoToggles = Array.prototype.slice.call(document.querySelectorAll('.info-toggle[data-info-target]'));
-  infoToggles.forEach(function (btn) {
-    btn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      var panel = document.getElementById(btn.getAttribute('data-info-target'));
-      if (panel) panel.classList.toggle('is-open');
+infoToggles.forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var panel = document.getElementById(btn.getAttribute('data-info-target'));
+    var isCurrentlyOpen = panel.classList.contains('is-open');
+
+    // close every info panel first
+    infoToggles.forEach(function (otherBtn) {
+      var otherPanel = document.getElementById(otherBtn.getAttribute('data-info-target'));
+      if (otherPanel) otherPanel.classList.remove('is-open');
     });
+
+    // then reopen this one, unless it was already open (so clicking it again closes it)
+    if (panel && !isCurrentlyOpen) panel.classList.add('is-open');
   });
+});
 
   /* ---------------- Mobile nav toggle ---------------- */
   var navToggle = document.querySelector('.nav-toggle');
