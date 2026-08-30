@@ -126,6 +126,12 @@ Responsiveness: layout checked at mobile and desktop widths
 After 
 <img width="1822" height="820" alt="image" src="https://github.com/user-attachments/assets/95908f20-aaf9-439e-a920-b1bac93f1e44" />
 
+Before 
+<img width="1865" height="777" alt="image" src="https://github.com/user-attachments/assets/6d992fd2-2913-4265-977f-aa216fbc6a4c" />
+
+After
+<img width="1886" height="530" alt="image" src="https://github.com/user-attachments/assets/d19a7527-040e-43e4-8778-03d13f88073b" />
+
  Full CSS validation against the Jigsaw validator
  
  Formal colour contrast check (e.g. WebAIM contrast checker) against WCAG AA
