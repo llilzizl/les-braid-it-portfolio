@@ -104,6 +104,48 @@ img {
 
 .nav-toggle {
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--pink);
+}
+
+@media (max-width: 720px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(13, 13, 13, 0.97);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .main-nav ul li {
+    padding: 16px 6%;
+    border-top: 1px solid var(--border);
+  }
+
+  .main-nav.is-open ul {
+    display: flex;
+  }
 }
 
 /* ---------- buttons ---------- */
