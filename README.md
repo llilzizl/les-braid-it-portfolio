@@ -116,9 +116,14 @@ Manual testing carried out so far:
 Functionality: nav links, the portfolio lightbox (open/close, next/prev, swipe, info popover), and the contact page's tab switching all checked in-browser
 Responsiveness: layout checked at mobile and desktop widths
 
-Still to do before this is submission-ready:
 
- Full HTML validation against the W3C validator
+ Full HTML validation against the W3C validator :
+ <img width="905" height="875" alt="image" src="https://github.com/user-attachments/assets/f21c1ca4-1f41-47ba-aa8a-315947d3e0dc" />
+
+ Before 
+ <img width="1627" height="881" alt="image" src="https://github.com/user-attachments/assets/3b29ed53-6013-4e3b-822d-5b1e89a06912" />
+
+
  Full CSS validation against the Jigsaw validator
  Formal colour contrast check (e.g. WebAIM contrast checker) against WCAG AA
  Cross-browser check (Chrome, Firefox, Safari, Edge)
