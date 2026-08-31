@@ -83,9 +83,13 @@ The palette was chosen to give strong contrast between text and background for r
 I used : webaim.org/resources/contrastchecker
 
 Progressive disclosure: the two contact forms are hidden until a visitor picks the one relevant to them, so nobody has to scroll past a form they don't need. A small "i" icon next to each option explains what it's for before committing to it.
+
 User control: no autoplay media or pop-ups; clicking a portfolio photo, switching contact tabs, and opening an info panel all give immediate visual feedback.
+
 Accessibility: all meaningful images include descriptive alt text; ; the gallery lightbox supports keyboard (Esc, arrow keys) and touch-swipe navigation, not just mouse clicks.
+
 Technologies used
+
 HTML5 (semantic markup: <header>, <nav>, <main>, <section>, <footer>)
 CSS3 (external stylesheet, custom properties for the colour palette, Flexbox and Grid layout, scroll-snap for the swipeable gallery, media queries for responsive layout)
 Vanilla JavaScript (no frameworks) for the portfolio lightbox, contact tab/form switching, and info popovers
@@ -155,9 +159,21 @@ After
  Works with tablet width : 
  <img width="932" height="773" alt="image" src="https://github.com/user-attachments/assets/db9b4dc8-8151-4c3d-be92-46f860b23ae3" />
 
- Form field testing (empty submission, invalid email, etc.) once a submission backend is added
+Testing Log :
 
-[Add a testing log here: table of what was tested, expected result, actual result, pass/fail]
+| # | Bug | Where | Fix |
+|---|---|---|---|
+| 1 | Logo had large transparent padding baked into the PNG, so no CSS height increase made it look bigger | `images/logo.png` | Cropped the file to the actual artwork bounds |
+| 2 | Header spacing pushed logo far from the border line / then too close after first fix | `style.css` `.site-header` | Iterated `padding` and `align-items` until spacing looked right |
+| 3 | Hero gallery images broken (referenced `.png`, actual files were `.jpg`) | `index.html` | Removed the hero-gallery section entirely (your choice) |
+| 4 | Lightbox info panel content got cut off with no way to scroll to see the rest | `style.css` `.lightbox` | Added `overflow-y: auto` and switched `align-items` to `flex-start` |
+| 5 | Both "more info" popovers on the contact page could be open at the same time | `main.js` | Rewrote toggle logic to close all panels before opening the clicked one |
+| 6 | 39 HTML validation errors: `<figure>` not allowed inside `<button>` | `portfolio.html` | Removed the unnecessary `<figure>` wrapper around each thumbnail image |
+| 7 | HTML validation error: `<img src="">` is invalid (empty but present) | `portfolio.html` lightbox | Replaced with a tiny valid placeholder image |
+| 8 | HTML validation errors: mismatched `<section>`/`<div>` opening and closing tags | `portfolio.html` | Made opening and closing tags match |
+| 9 | HTML validation warning: `.about-strip` section had no heading | `contact.html` | Added a visually-hidden `<h2>About</h2>` |
+| 10 | Decorative background images (`bg-decor-*.png`) rendered too small/faint | `index.html`, `contact.html`, `style.css` | Removed entirely (your choice) |
+
 
 Known bugs
 
@@ -171,10 +187,15 @@ Push the final code to the main branch on GitHub
 In the repository, go to Settings → Pages
 Select the main branch as the source
 GitHub Pages generates a live URL, which is tested to confirm it matches the local development version
+
 Credits
 Design and development by Lilian, for Les Braid It
+Claude Code 
+
 Photography of finished styles by Lilian / Les Braid It
+
 Fonts: Google Fonts, Playfair Display, Montserrat
+
 Future improvements
 Services and pricing page/table
 Client testimonials
