@@ -2,7 +2,7 @@ Les Braid It: Portfolio & Booking Website
 
 A 3-page front end web application built for Les Braid It, a hairstyling business specialising in braids, weaves, and natural hairstyles. The site gives potential clients a fast, visual way to see my work and get in touch to book.
 
-Live site:  xx
+Live site: https://llilzizl.github.io/les-braid-it-portfolio/
 
 Purpose
 
@@ -20,10 +20,21 @@ Primary audience: people looking to book a braiding/hairstyling appointment or c
 User stories used to guide the design:
 
 As a potential client, I want to see photos of the stylist's previous work, grouped by style, so I can judge whether their work matches what I want.
+<img width="1905" height="880" alt="image" src="https://github.com/user-attachments/assets/5eefc3f6-81bd-4640-a031-426970d1f055" />
+<img width="1912" height="880" alt="image" src="https://github.com/user-attachments/assets/2cdb0141-298e-433a-a528-1418713a1bbf" />
+
 As a potential client, I want to see a close-up of any style with more detail, so I can properly evaluate it before getting in touch.
+<img width="1390" height="873" alt="image" src="https://github.com/user-attachments/assets/177eaea3-69e9-4300-8404-5d7cceaf56a8" />
+
 As a potential client, I want an easy way to register interest or get in touch, so I don't have to hunt for contact details.
+<img width="1387" height="502" alt="image" src="https://github.com/user-attachments/assets/d566cacc-7596-4198-b16c-f5ce27fa612a" />
+
 As a brand or content creator, I want a separate, relevant way to enquire about collaborations, so my enquiry isn't mixed in with class sign-ups.
+<img width="1682" height="777" alt="image" src="https://github.com/user-attachments/assets/a63cc295-fa5e-4136-97ae-3aa3f644fa53" />
+<img width="1213" height="771" alt="image" src="https://github.com/user-attachments/assets/fc010aaa-f591-48dc-8e3c-54fa696bcfbe" />
+
 As any visitor, I want to find the stylist's social profiles quickly, so I can see more of her work before committing.
+<img width="1717" height="262" alt="image" src="https://github.com/user-attachments/assets/eb5e100d-c2ab-4683-aaa7-348588435d91" />
 
 Pages & Purpose
 Home (index.html) - Introduces the brand, hero gallery of recent work, links through to the portfolio and to the two contact pathways
@@ -133,10 +144,17 @@ After
 <img width="1886" height="530" alt="image" src="https://github.com/user-attachments/assets/d19a7527-040e-43e4-8778-03d13f88073b" />
 
  Full CSS validation against the Jigsaw validator
- 
- Formal colour contrast check (e.g. WebAIM contrast checker) against WCAG AA
+ <img width="1808" height="821" alt="image" src="https://github.com/user-attachments/assets/59bf4fae-0182-4eb7-a8ad-3554e7ab7913" />
+
  Cross-browser check (Chrome, Firefox, Safari, Edge)
+ 
+ Works with all browsers
+ 
  Tablet-width check
+
+ Works with tablet width : 
+ <img width="932" height="773" alt="image" src="https://github.com/user-attachments/assets/db9b4dc8-8151-4c3d-be92-46f860b23ae3" />
+
  Form field testing (empty submission, invalid email, etc.) once a submission backend is added
 
 [Add a testing log here: table of what was tested, expected result, actual result, pass/fail]
