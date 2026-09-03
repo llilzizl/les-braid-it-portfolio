@@ -2,7 +2,7 @@ Les Braid It: Portfolio & Booking Website
 
 A 3-page front end web application built for Les Braid It, a hairstyling business specialising in braids, weaves, and natural hairstyles. The site gives potential clients a fast, visual way to see my work and get in touch to book.
 
-Live site:  xx
+Live site: https://llilzizl.github.io/les-braid-it-portfolio/
 
 Purpose
 
@@ -20,10 +20,21 @@ Primary audience: people looking to book a braiding/hairstyling appointment or c
 User stories used to guide the design:
 
 As a potential client, I want to see photos of the stylist's previous work, grouped by style, so I can judge whether their work matches what I want.
+<img width="1905" height="880" alt="image" src="https://github.com/user-attachments/assets/5eefc3f6-81bd-4640-a031-426970d1f055" />
+<img width="1912" height="880" alt="image" src="https://github.com/user-attachments/assets/2cdb0141-298e-433a-a528-1418713a1bbf" />
+
 As a potential client, I want to see a close-up of any style with more detail, so I can properly evaluate it before getting in touch.
+<img width="1390" height="873" alt="image" src="https://github.com/user-attachments/assets/177eaea3-69e9-4300-8404-5d7cceaf56a8" />
+
 As a potential client, I want an easy way to register interest or get in touch, so I don't have to hunt for contact details.
+<img width="1387" height="502" alt="image" src="https://github.com/user-attachments/assets/d566cacc-7596-4198-b16c-f5ce27fa612a" />
+
 As a brand or content creator, I want a separate, relevant way to enquire about collaborations, so my enquiry isn't mixed in with class sign-ups.
+<img width="1682" height="777" alt="image" src="https://github.com/user-attachments/assets/a63cc295-fa5e-4136-97ae-3aa3f644fa53" />
+<img width="1213" height="771" alt="image" src="https://github.com/user-attachments/assets/fc010aaa-f591-48dc-8e3c-54fa696bcfbe" />
+
 As any visitor, I want to find the stylist's social profiles quickly, so I can see more of her work before committing.
+<img width="1717" height="262" alt="image" src="https://github.com/user-attachments/assets/eb5e100d-c2ab-4683-aaa7-348588435d91" />
 
 Pages & Purpose
 Home (index.html) - Introduces the brand, hero gallery of recent work, links through to the portfolio and to the two contact pathways
@@ -72,9 +83,13 @@ The palette was chosen to give strong contrast between text and background for r
 I used : webaim.org/resources/contrastchecker
 
 Progressive disclosure: the two contact forms are hidden until a visitor picks the one relevant to them, so nobody has to scroll past a form they don't need. A small "i" icon next to each option explains what it's for before committing to it.
+
 User control: no autoplay media or pop-ups; clicking a portfolio photo, switching contact tabs, and opening an info panel all give immediate visual feedback.
+
 Accessibility: all meaningful images include descriptive alt text; ; the gallery lightbox supports keyboard (Esc, arrow keys) and touch-swipe navigation, not just mouse clicks.
+
 Technologies used
+
 HTML5 (semantic markup: <header>, <nav>, <main>, <section>, <footer>)
 CSS3 (external stylesheet, custom properties for the colour palette, Flexbox and Grid layout, scroll-snap for the swipeable gallery, media queries for responsive layout)
 Vanilla JavaScript (no frameworks) for the portfolio lightbox, contact tab/form switching, and info popovers
@@ -125,14 +140,39 @@ Responsiveness: layout checked at mobile and desktop widths
 After 
 <img width="1822" height="820" alt="image" src="https://github.com/user-attachments/assets/95908f20-aaf9-439e-a920-b1bac93f1e44" />
 
- Full CSS validation against the Jigsaw validator
- 
- Formal colour contrast check (e.g. WebAIM contrast checker) against WCAG AA
- Cross-browser check (Chrome, Firefox, Safari, Edge)
- Tablet-width check
- Form field testing (empty submission, invalid email, etc.) once a submission backend is added
+Before 
+<img width="1865" height="777" alt="image" src="https://github.com/user-attachments/assets/6d992fd2-2913-4265-977f-aa216fbc6a4c" />
 
-[Add a testing log here: table of what was tested, expected result, actual result, pass/fail]
+After
+<img width="1886" height="530" alt="image" src="https://github.com/user-attachments/assets/d19a7527-040e-43e4-8778-03d13f88073b" />
+
+ Full CSS validation against the Jigsaw validator
+ <img width="1808" height="821" alt="image" src="https://github.com/user-attachments/assets/59bf4fae-0182-4eb7-a8ad-3554e7ab7913" />
+
+ Cross-browser check (Chrome, Firefox, Safari, Edge)
+ 
+ Works with all browsers
+ 
+ Tablet-width check
+
+ Works with tablet width : 
+ <img width="932" height="773" alt="image" src="https://github.com/user-attachments/assets/db9b4dc8-8151-4c3d-be92-46f860b23ae3" />
+
+Testing Log :
+
+| # | Bug | Where | Fix |
+|---|---|---|---|
+| 1 | Logo had large transparent padding baked into the PNG, so no CSS height increase made it look bigger | `images/logo.png` | Cropped the file to the actual artwork bounds |
+| 2 | Header spacing pushed logo far from the border line / then too close after first fix | `style.css` `.site-header` | Iterated `padding` and `align-items` until spacing looked right |
+| 3 | Hero gallery images broken (referenced `.png`, actual files were `.jpg`) | `index.html` | Removed the hero-gallery section entirely (your choice) |
+| 4 | Lightbox info panel content got cut off with no way to scroll to see the rest | `style.css` `.lightbox` | Added `overflow-y: auto` and switched `align-items` to `flex-start` |
+| 5 | Both "more info" popovers on the contact page could be open at the same time | `main.js` | Rewrote toggle logic to close all panels before opening the clicked one |
+| 6 | 39 HTML validation errors: `<figure>` not allowed inside `<button>` | `portfolio.html` | Removed the unnecessary `<figure>` wrapper around each thumbnail image |
+| 7 | HTML validation error: `<img src="">` is invalid (empty but present) | `portfolio.html` lightbox | Replaced with a tiny valid placeholder image |
+| 8 | HTML validation errors: mismatched `<section>`/`<div>` opening and closing tags | `portfolio.html` | Made opening and closing tags match |
+| 9 | HTML validation warning: `.about-strip` section had no heading | `contact.html` | Added a visually-hidden `<h2>About</h2>` |
+| 10 | Decorative background images (`bg-decor-*.png`) rendered too small/faint | `index.html`, `contact.html`, `style.css` | Removed entirely (your choice) |
+
 
 Known bugs
 
@@ -146,10 +186,15 @@ Push the final code to the main branch on GitHub
 In the repository, go to Settings → Pages
 Select the main branch as the source
 GitHub Pages generates a live URL, which is tested to confirm it matches the local development version
+
 Credits
 Design and development by Lilian, for Les Braid It
+Claude Code 
+
 Photography of finished styles by Lilian / Les Braid It
+
 Fonts: Google Fonts, Playfair Display, Montserrat
+
 Future improvements
 Services and pricing page/table
 Client testimonials
