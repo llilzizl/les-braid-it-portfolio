@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+lightbox-imgdocument.addEventListener('DOMContentLoaded', function () {
 
   /* ---------------- Portfolio lightbox ---------------- */
   var items = Array.prototype.slice.call(document.querySelectorAll('.portfolio-item'));

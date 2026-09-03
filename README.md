@@ -95,7 +95,6 @@ les-braid-it-portfolio/
 └── images/
     ├── logo.png
     ├── about-photo.jpg
-    ├── hero-1.jpg, hero-2.jpg, hero-3.jpg
     ├── icons/
     │   ├── nav-home.png, nav-portfolio.png, nav-contact.png
     │   └── social-instagram.png, social-pinterest.png, social-tiktok.png, social-email.png
