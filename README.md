@@ -7,6 +7,7 @@ Live site: https://llilzizl.github.io/les-braid-it-portfolio/
 ## Table of Contents
 - [Purpose](#purpose)
 - [Target Audience & User Stories](#target-audience--user-stories)
+- [Screenshots](#screenshots)
 - [UX Design Rationale](#ux-design-rationale)
 - [Technologies Used](#technologies-used)
 - [File Structure](#file-structure)
@@ -48,6 +49,42 @@ As a brand or content creator, I want a separate, relevant way to enquire about 
 
 As any visitor, I want to find the stylist's social profiles quickly, so I can see more of her work before committing.
 <img width="1717" height="262" alt="image" src="https://github.com/user-attachments/assets/eb5e100d-c2ab-4683-aaa7-348588435d91" />
+
+##Screenshots 
+
+Desktop
+
+<img width="1171" height="727" alt="image" src="https://github.com/user-attachments/assets/b198aeba-9abb-4a62-b358-e06d323e15d0" />
+<img width="1162" height="718" alt="image" src="https://github.com/user-attachments/assets/acaecefc-cf41-4d1f-9438-35e98a7e14ee" />
+<img width="1152" height="707" alt="image" src="https://github.com/user-attachments/assets/42453aec-a96a-411a-b91f-9580697ec4ae" />
+<img width="1152" height="722" alt="image" src="https://github.com/user-attachments/assets/5ec04f23-79f5-4d92-bee3-6e98300489dd" />
+<img width="1153" height="735" alt="image" src="https://github.com/user-attachments/assets/9ceb984a-534b-4862-8d02-a366fbe3b9e2" />
+<img width="1151" height="727" alt="image" src="https://github.com/user-attachments/assets/987c0562-1c91-407b-a405-7a9fb1b7ab14" />
+<img width="1137" height="700" alt="image" src="https://github.com/user-attachments/assets/40bbcbf9-8b66-4796-9f06-17ebfd794107" />
+<img width="1137" height="703" alt="image" src="https://github.com/user-attachments/assets/604f83a5-5dc6-48e8-8a9d-0921a726ad23" />
+
+
+Tablet
+
+<img width="462" height="628" alt="image" src="https://github.com/user-attachments/assets/b6dbca7f-4c05-4c85-991b-365d6f57ed1b" />
+<img width="477" height="627" alt="image" src="https://github.com/user-attachments/assets/d7659f89-6864-477a-998f-b69c8562c4fa" />
+<img width="470" height="640" alt="image" src="https://github.com/user-attachments/assets/35e1df70-61c3-443c-9321-3aa434198fe3" />
+<img width="472" height="631" alt="image" src="https://github.com/user-attachments/assets/c7c1122f-9189-45f1-a3d3-77be94e0a219" />
+<img width="462" height="622" alt="image" src="https://github.com/user-attachments/assets/a183f5db-5717-4c36-9c30-835b4918108a" />
+<img width="462" height="610" alt="image" src="https://github.com/user-attachments/assets/b2f92e1e-309a-4ba5-96a1-50004acc027f" />
+<img width="456" height="646" alt="image" src="https://github.com/user-attachments/assets/0e5785ca-0558-4306-bf3c-9b1d5032bab0" />
+
+
+Mobile 
+
+<img width="445" height="790" alt="image" src="https://github.com/user-attachments/assets/e1762cb7-dd4e-4bf7-ae7d-b39549fae8e4" />
+<img width="455" height="793" alt="image" src="https://github.com/user-attachments/assets/7590dff3-0fbb-4ace-b792-320affe19331" />
+<img width="428" height="780" alt="image" src="https://github.com/user-attachments/assets/84b20fa9-0525-403a-9667-b34a6ee35854" />
+<img width="448" height="798" alt="image" src="https://github.com/user-attachments/assets/60371287-25e4-41be-9294-496cc3ffc121" />
+<img width="457" height="802" alt="image" src="https://github.com/user-attachments/assets/fda80d08-291d-4393-a69e-910a9d755161" />
+<img width="431" height="796" alt="image" src="https://github.com/user-attachments/assets/528d3b8d-1ed0-4b39-9a2d-8f06f3892a5b" />
+<img width="427" height="800" alt="image" src="https://github.com/user-attachments/assets/62febe3b-b991-4c95-8792-f6dd7509da07" />
+<img width="451" height="785" alt="image" src="https://github.com/user-attachments/assets/3cc6c6c6-787f-44e4-bc9b-58155e8f2600" />
 
 ##Pages & Purpose
 
