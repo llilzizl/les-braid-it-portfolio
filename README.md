@@ -236,12 +236,28 @@ None
 
 ##Deployment
 
-The site is deployed via GitHub Pages:
+## Deployment
 
-Push the final code to the main branch on GitHub
-In the repository, go to Settings → Pages
-Select the main branch as the source
-GitHub Pages generates a live URL, which is tested to confirm it matches the local development version
+This project is deployed using GitHub Pages.
+
+### To view the live site
+The live site is hosted at: https://llilzizl.github.io/les-braid-it-portfolio/
+
+### To run this project locally
+1. Clone the repository:
+   `git clone https://github.com/llilzizl/les-braid-it-portfolio.git`
+2. Open the folder in your code editor (e.g. VS Code).
+3. Open `index.html` in your browser to view the site (or use a Live Server extension for auto-reload while editing).
+
+### To make changes and push them live
+1. Make your changes to the HTML/CSS/JS files.
+2. Stage and commit your changes:
+   `git add .`
+   `git commit -m "Describe your change"`
+3. Push to GitHub:
+   `git push origin main`
+4. To publish via GitHub Pages: go to the repository on GitHub → **Settings** → **Pages** → under "Build and deployment", set **Source** to "Deploy from a branch" → select the `main` branch and `/ (root)` folder → **Save**.
+5. GitHub will provide a live URL (usually within a minute). Refresh it to confirm your changes appear.
 
 ##Credits
 
