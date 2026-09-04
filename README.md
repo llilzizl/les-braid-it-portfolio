@@ -18,7 +18,7 @@ Live site: https://llilzizl.github.io/les-braid-it-portfolio/
 - [Credits](#credits)
 - [Future Improvements](#future-improvements)
 
-##Purpose
+## Purpose
 
 Les Braid It needed a simple, professional web presence that does two things well:
 
@@ -27,7 +27,7 @@ It is easy get in touch or book, either for a "Perfect" Sew In class or a collab
 
 The goal was a site whose purpose is obvious within seconds of landing on it.
 
-##Target audience & user stories
+## Target audience & user stories
 
 Primary audience: people looking to book a braiding/hairstyling appointment or class, or brands/creators looking to collaborate, likely browsing on their phone, comparing stylists before choosing one.
 
@@ -50,7 +50,7 @@ As a brand or content creator, I want a separate, relevant way to enquire about 
 As any visitor, I want to find the stylist's social profiles quickly, so I can see more of her work before committing.
 <img width="1717" height="262" alt="image" src="https://github.com/user-attachments/assets/eb5e100d-c2ab-4683-aaa7-348588435d91" />
 
-##Screenshots 
+## Screenshots 
 
 Desktop
 
@@ -86,7 +86,7 @@ Mobile
 <img width="427" height="800" alt="image" src="https://github.com/user-attachments/assets/62febe3b-b991-4c95-8792-f6dd7509da07" />
 <img width="451" height="785" alt="image" src="https://github.com/user-attachments/assets/3cc6c6c6-787f-44e4-bc9b-58155e8f2600" />
 
-##Pages & Purpose
+## Pages & Purpose
 
 Home (index.html) - Introduces the brand, hero gallery of recent work, links through to the portfolio and to the two contact pathways
 
@@ -96,12 +96,12 @@ Contact (contact.html) - About section with photo and social links, plus two enq
 
 Navigation is identical across all three pages so the site feels cohesive rather than three separate documents.
 
-##UX design rationale
+## UX design rationale
 
 Information hierarchy: each page opens with the thing that matters most to a first-time visitor first (hero on the home page, gallery on the portfolio page, ways to get in touch on the contact page), so there's no scrolling to find the point of the page.
 Consistency: the same nav bar, colour palette, and typography appear on every page, reinforcing a single, professional brand.
 
-##Colour palette (matches the existing Les Braid It brand):
+### Colour palette (matches the existing Les Braid It brand):
 
 #0D0D0D: near-black background
 #E8558F: hot pink accent, used for headings, links, buttons, and outlines
@@ -109,7 +109,7 @@ Consistency: the same nav bar, colour palette, and typography appear on every pa
 #B3B3B3: grey, used for supporting/body text
 #FFFCF9: off-white, used for primary text on the dark background
 
-##Colour Contrast Audit
+### Colour Contrast Audit
 
 | Foreground | Background | Used for | Ratio | AA Normal Text (4.5:1) | AA Large Text (3:1) |
 |---|---|---|---|---|---|
@@ -141,7 +141,7 @@ User control: no autoplay media or pop-ups; clicking a portfolio photo, switchin
 
 Accessibility: all meaningful images include descriptive alt text; ; the gallery lightbox supports keyboard (Esc, arrow keys) and touch-swipe navigation, not just mouse clicks.
 
-##Technologies used
+## Technologies used
 
 HTML5 (semantic markup: `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
 CSS3 (external stylesheet, custom properties for the colour palette, Flexbox and Grid layout, scroll-snap for the swipeable gallery, media queries for responsive layout)
@@ -152,6 +152,7 @@ GitHub Pages for deployment
 
 ## File structure
 
+```
 les-braid-it-portfolio/
 ├── index.html
 ├── portfolio.html
@@ -171,15 +172,17 @@ les-braid-it-portfolio/
         │   └── social-instagram.png, social-pinterest.png, social-tiktok.png, social-email.png
         └── portfolio/
             └── (photos grouped by style, e.g. fulani-1.jpg, cassie-1.jpg, natural-1.jpg, etc.)
+```
 
 Files and folders use lowercase names with no spaces, for cross-platform compatibility.
 
-##Development process
+## Development process
 
 Initial development was done locally, working in stages: colour palette and layout system first, then each page (home, portfolio, contact), then interactive JavaScript features (lightbox, tab switching). The working site was checked in-browser after each stage before moving on to the next.
 
 This early local development was not committed incrementally, which is reflected in the earlier part of the commit history. From that point onward, work has been committed in smaller, more frequent stages — restructuring files into the `assets/` directory, fixing bugs found through testing (see Testing section), and documentation updates are each committed separately with descriptive messages (see commit history for details).
-##Testing
+
+## Testing
 
 Manual testing carried out so far:
 
@@ -230,11 +233,9 @@ Testing Log :
 | 10 | Decorative background images (`bg-decor-*.png`) rendered too small/faint | `index.html`, `contact.html`, `style.css` | Removed entirely (your choice) |
 
 
-##Known bugs
+## Known bugs
 
 None    
-
-##Deployment
 
 ## Deployment
 
@@ -249,6 +250,14 @@ The live site is hosted at: https://llilzizl.github.io/les-braid-it-portfolio/
 2. Open the folder in your code editor (e.g. VS Code).
 3. Open `index.html` in your browser to view the site (or use a Live Server extension for auto-reload while editing).
 
+### To use this project as a starting point for your own site
+1. Create a new empty repository on GitHub: go to [github.com/new](https://github.com/new), give it a name, and click **Create repository**.
+2. In your terminal, inside the cloned project folder, remove the link to the original repository and point it to your new one instead:
+   `git remote remove origin`
+   `git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git`
+3. Push the code to your new repository:
+   `git push -u origin main`
+
 ### To make changes and push them live
 1. Make your changes to the HTML/CSS/JS files.
 2. Stage and commit your changes:
@@ -256,19 +265,17 @@ The live site is hosted at: https://llilzizl.github.io/les-braid-it-portfolio/
    `git commit -m "Describe your change"`
 3. Push to GitHub:
    `git push origin main`
-4. To publish via GitHub Pages: go to the repository on GitHub → **Settings** → **Pages** → under "Build and deployment", set **Source** to "Deploy from a branch" → select the `main` branch and `/ (root)` folder → **Save**.
+4. To publish via GitHub Pages: go to your repository on GitHub → **Settings** → **Pages** → under "Build and deployment", set **Source** to "Deploy from a branch" → select the `main` branch and `/ (root)` folder → **Save**.
 5. GitHub will provide a live URL (usually within a minute). Refresh it to confirm your changes appear.
 
-##Credits
+## Credits
 
-Design and development by Lilian, for Les Braid It
+- Design and development by Lilian, for Les Braid It
 - Claude Code (AI assistance used for debugging and documentation support)
+- Photography of finished styles by Lilian / Les Braid It
+- Fonts: Google Fonts, Playfair Display, Montserrat
 
-Photography of finished styles by Lilian / Les Braid It
-
-Fonts: Google Fonts, Playfair Display, Montserrat
-
-##Future improvements
+## Future improvements
 
 - Services and pricing page/table
 - Client testimonials
